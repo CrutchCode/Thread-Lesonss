@@ -20,7 +20,8 @@ namespace LessonsDownload
 
         public void Download()
         {
-            client.DownloadFile(dataFile.Path, dataFile.Filename);
+            //client.DownloadFile(dataFile.Path, dataFile.Filename);
+            client.DownloadFileTaskAsync(dataFile.Path, dataFile.Filename);
         }
     }
     public class DataFile
